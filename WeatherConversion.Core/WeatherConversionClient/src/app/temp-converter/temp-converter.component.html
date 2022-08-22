@@ -5,12 +5,14 @@
 
       <label for="temperature">Temperature</label>
       <input #temperature class="form-control" id="temperature" name="temperature" aria-describedby="temperatureHelp" placeholder="Temperature to be converted">
+      <label for="temperature">Unit</label>
+      <input #unitFrom class="form-control" id="temperature" name="temperature" aria-describedby="unitFrom" placeholder="C/F/K">
 
       <label for="convertedToText">Converted to</label>
       <input class="form-control" #convertedTo id="convertedTo" placeholder="Please enter...">
       <label for="convertedToText">Is:</label>
       <h3>{{convertedTemp}}</h3>
-      <button (click)="onSubmit(temperature.value, convertedTo.value)" type="submit" class="btn btn-primary">Convert</button>
+      <button (click)="onSubmit(temperature.value,unitFrom.value, convertedTo.value)" type="submit" class="btn btn-primary">Convert</button>
     </div>
 
   </div>
