@@ -18,7 +18,8 @@ export class TempConverterComponent {
 
   constructor(private http: HttpClient ) { }
 
-  onSubmit(temperature:string, convertedTo:string ): any {    
+  onSubmit(temperature: string, convertedTo: string): any {
+    //TODO:Allow Dynamic units from
     return this.http.get('https://localhost:7066', { params: { temp: temperature, unitFrom: "C", unitTo: convertedTo } }).subscribe(data => {
       this.convertedTemp = data.toString();
     })
