@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'WeatherConversionClient';
+  title = 'Weather Converter';
+  convertedTemp = 30;
+  unit = "F";
 }
