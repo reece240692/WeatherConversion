@@ -13,7 +13,6 @@ export class TempConverterComponent {
 
   title = 'Weather Converter';
   convertedTemp = '';
-  unit = "F";
 
 
   constructor(private http: HttpClient ) { }
