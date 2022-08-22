@@ -20,7 +20,7 @@ export class TempConverterComponent {
 
   onSubmit(temperature:string, convertedTo:string ): any {    
     return this.http.get('https://localhost:7066', { params: { temp: temperature, unitFrom: "C", unitTo: convertedTo } }).subscribe(data => {
-      alert(data);
+      this.convertedTemp = data.toString();
     })
   }
 
