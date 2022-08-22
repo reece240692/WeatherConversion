@@ -17,4 +17,8 @@
     <PackageReference Include="UltimateTemperatureLibrary" Version="1.2.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\WeatherConversion.Core\WeatherConversion.Core.csproj" />
+  </ItemGroup>
+
 </Project>
