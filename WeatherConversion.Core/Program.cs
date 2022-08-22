@@ -41,7 +41,7 @@ app.UseHttpsRedirection();
 app.MapGet("/", (double temp, char unitFrom,char unitTo) =>
 {
     TempConverterServices TCS = new();
-    var result = TCS.Convert(temp, unitFrom, unitTo);
+    var result = TCS.Convert(temp,char.ToUpper(unitFrom), char.ToUpper(unitTo));
    var convertedResult= JsonConvert.SerializeObject(result);
     return convertedResult;
    

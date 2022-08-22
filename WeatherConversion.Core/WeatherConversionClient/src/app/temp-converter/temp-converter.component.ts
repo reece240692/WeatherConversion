@@ -1,5 +1,7 @@
+import { Component, OnInit, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Component, Injectable } from '@angular/core';
+import { Observable, throwError } from 'rxjs';
+import { catchError, retry } from 'rxjs/operators';
 @Component({
   selector: 'app-temp-converter',
   templateUrl: './temp-converter.component.html',
