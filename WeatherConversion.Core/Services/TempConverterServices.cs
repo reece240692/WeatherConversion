@@ -4,7 +4,7 @@ using System.Runtime.CompilerServices;
 using UTL = UltimateTemperatureLibrary;
 
 
-namespace WeatherConversion.Core
+namespace WeatherConversion.Core.Services
 {
     public class TempConverterServices
     {

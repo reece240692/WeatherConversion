@@ -17,7 +17,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 
-app.MapGet("/TempConvert", () =>
+app.MapGet("/", () =>
 {
     return ("Hello World!");
    
