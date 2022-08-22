@@ -40,11 +40,27 @@ app.UseHttpsRedirection();
 
 app.MapGet("/", (double temp, char unitFrom,char unitTo) =>
 {
-    TempConverterServices TCS = new();
-    var result = TCS.Convert(temp,char.ToUpper(unitFrom), char.ToUpper(unitTo));
-   var convertedResult= JsonConvert.SerializeObject(result);
-    return convertedResult;
-   
+    try
+    {
+        TempConverterServices TCS = new();
+        var result = TCS.Convert(temp, char.ToUpper(unitFrom), char.ToUpper(unitTo));
+        var convertedResult = JsonConvert.SerializeObject(result);
+        return convertedResult;
+
+    }
+    catch(BadHttpRequestException)
+    {
+        var result ="Bad Request! Please Check input values";
+        return JsonConvert.SerializeObject(result);
+    }
+
+    catch(Exception)
+    {
+        var result = "Oops! Something went wrong...";
+      return JsonConvert.SerializeObject(result);
+    }
+
+
 })
 .WithName("GetConverter");
 

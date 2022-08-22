@@ -4,7 +4,7 @@
     <div class="form-group">
 
       <label for="temperature">Temperature</label>
-      <input #temperature class="form-control" id="temperature" name="temperature" aria-describedby="temperatureHelp" placeholder="Temperature to be converted">
+      <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" #temperature  class="form-control" id="temperature" name="temperature" aria-describedby="temperatureHelp" placeholder="Temperature to be converted">
       <label for="temperature">Unit</label>
       <input #unitFrom class="form-control" id="temperature" name="temperature" aria-describedby="unitFrom" placeholder="C/F/K">
 
