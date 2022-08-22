@@ -1,3 +1,5 @@
+using WeatherConversion.Core.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -17,16 +19,12 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 
-app.MapGet("/", () =>
+app.MapPost("/", (double temp, char unitFrom, char unitTo) =>
 {
-    return ("Hello World!");
+    TempConverterServices TCS = new();
+    return TCS.Convert(temp, unitFrom, unitTo);
    
 })
 .WithName("GetConverter");
 
 app.Run();
-
-internal record WeatherForecast(DateTime Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
