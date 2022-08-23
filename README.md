@@ -25,7 +25,7 @@
 
 ## Why isn't the History Table working?
 
-I would've loved to have fully implemented this given more time but since the focus was on my approach rather than getting everything perfect, I wanted to focus on the approach.
+I would've loved to have fully implemented this given more time but since the focus was on my approach rather than getting everything perfect, I wanted to focus on the approach for testing purposes.
 
 ## Why use a library instead of implementing the algorithms yourself?
 
