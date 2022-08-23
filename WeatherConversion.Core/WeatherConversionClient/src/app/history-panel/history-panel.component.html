@@ -1,1 +1,27 @@
-<p>history-panel works!</p>
+
+
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <h3> (Mock)History</h3>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Temperature</th>
+          <th scope="col">Unit</th>
+          <th scope="col">Converted to</th>
+          <th scope="col">Result</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let items of HI">
+          <td> {{items.Temperature}}</td>
+          <td> {{items.Unit}}</td>
+          <td> {{items.ConvertedTo}}</td>
+          <td> {{items.Result}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+  </div>
