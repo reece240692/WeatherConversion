@@ -1,7 +1,7 @@
 # Getting Started
 
 1. Load the Solution into Visual Studio
-2. Run WeatherConversion.Core (This is the API the Client App will communicate with
+2. Run WeatherConversion.Core (This is the API the Client App will communicate with, and will most likely serve on localhost:7200)
 3. Right Click the WeatherConversionClient Folder > open in Terminal
 4. Enter `ng serve` to run the front end Angular App
 5. Navigate to http://localhost:4200
