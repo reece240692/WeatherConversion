@@ -6,14 +6,14 @@
 4. Enter `ng serve` to run the front end Angular App
 5. Navigate to http://localhost:4200
 
-#Converting a Temperature
+# Converting a Temperature
 
 1. Enter the temperature to convert
 2. Enter the current temperature's unit in the box below that
 3. and the unit you'd like to convert to, in the box below that
 4. click the button and the converted result will appear
 
-#Technologies Used
+# Technologies Used
 
 - Angular 12
 - .NET 6.0
@@ -21,7 +21,7 @@
 - The Ultimate Temperature Library (to save re-inventing the wheel given that we're not making a better one :D)
 - Bootstrap
 
-#FAQs
+# FAQs
 
 ## Why isn't the History Table working?
 
